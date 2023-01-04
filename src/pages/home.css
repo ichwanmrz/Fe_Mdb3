@@ -1,0 +1,51 @@
+
+    .text {
+        margin-top: 10%;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-family: Arial;
+    }
+
+    div.home {
+        display: flex;
+        margin-left: 5%;
+        margin-top: 5%;
+        width: 80%;
+        gap: 10%;
+    }
+
+    .cover {
+        width: 100%;
+        
+    }
+
+    div Image {
+        margin-left: 10px;
+    }
+
+    div Button {
+        color: white; 
+        background-color: black;
+        border: 1px solid; 
+        border-radius: 10px; 
+        padding: 10px;
+    }
+
+    div.logo2 {
+        display:flex;
+        margin-top: 28%;
+        margin-right: 10px;
+        width: 10px;
+    }
+
+    div.logo2 Image {
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    section {
+        align-content: center;
+    }
