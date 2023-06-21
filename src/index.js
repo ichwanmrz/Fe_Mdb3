@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home'
-import Login from './pages/Login';
-import Register from './pages/Register.jsx'
-import Todo from './pages/Todo';
 import reportWebVitals from './reportWebVitals';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Profile from './pages/Profile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,9 +15,9 @@ root.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route path="" element={<Home />} />
-          <Route path="register" element={<Register />} />
-          <Route path="login" element={<Login />} />
-          <Route path="todo" element={<Todo />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/profile" element={<Profile />} />
         </Route>
       </Routes>
     </BrowserRouter>

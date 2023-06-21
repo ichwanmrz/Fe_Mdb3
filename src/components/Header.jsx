@@ -4,11 +4,12 @@ import { Link, Outlet} from "react-router-dom";
 import { Nav, Navbar, Container, NavDropdown, Button } from 'react-bootstrap';
 
 const Header = () => {
+  //logic
   return (
   <div>
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#"><strong>Snap</strong></Navbar.Brand>
+        <Navbar.Brand href="#" id="name"><strong><u className='ms-5'>IchwanMrz</u></strong></Navbar.Brand>
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
@@ -28,11 +29,11 @@ const Header = () => {
             </NavDropdown>
             <Nav.Link as={Link} to="/careers">Careers</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
-            <Nav.Link as={Link} to="/todo">Notes</Nav.Link>
+           
           </Nav>
-          <Nav className="justify-content-end">
-            <Button as={Link} to="/login" variant='light'>Login</Button>
-            <Button as={Link} to="/register" variant="outline-dark">Register</Button>
+          <Nav className="justify-content-end gap-3">
+            <Button as={Link} to="/login" variant='outline-light'>Login</Button>
+            <Button as={Link} to="/register" variant="outline-light">Register</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
